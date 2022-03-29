@@ -279,13 +279,18 @@ img {
       );
       top: 0;
       left: 0;
+      z-index: 1;
+    }
+
+    .container{
+      z-index: 5;
+      padding: 0px 15px;
     }
 
     &_content {
       position: absolute;
-      left: 235px;
       bottom: 90px;
-      z-index: 1;
+      z-index: 2;
 
       span {
         display: block;
@@ -322,12 +327,15 @@ img {
       border-radius: 3px;
       border: none;
       margin-top: 60px;
+      cursor: pointer;
     }
 
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
+      position: absolute;
+      z-index: 0;
     }
   }
 
@@ -419,6 +427,7 @@ img {
   &__header {
     display: flex;
     align-items: center;
+    padding: 0px 15px;
     .title {
       margin-right: auto;
     }
@@ -443,9 +452,11 @@ img {
             color: $second-color;
           }
         }
+      }
 
-        .active {
-          color: $second-color;
+      li.active{
+        a{
+            color: $second-color;
         }
       }
 
@@ -478,12 +489,15 @@ img {
 
   &__col {
     width: calc(100% / 12 * 9);
-    min-height: 255px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    min-height: 255px;   
     padding: 0 15px;
+
+    &_content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
   }
 
   &__news {

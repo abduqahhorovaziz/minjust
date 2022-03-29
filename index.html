@@ -25,6 +25,15 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/dist/assets/owl.theme.default.min.css"
+    />
+
     <title>Minjust</title>
   </head>
 
@@ -149,7 +158,6 @@
                 </button>
               </div>
             </div>
-
             <img src="assets/images/home/slide1.png" />
           </div>
           <div class="swiper-slide home__slide">
@@ -189,7 +197,7 @@
         </div>
       </div>
 
-      <div thumbsSlider="" class="swiper mySwiper">
+      <!-- <div thumbsSlider="" class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="swiper-slide-content">
@@ -225,7 +233,7 @@
             <img src="assets/images/home/slide1.png" />
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="press">
@@ -233,10 +241,10 @@
         <div class="press__wrapper">
           <div class="press__header">
             <h2 class="title">Пресс служба</h2>
-            <ul>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#" class="active">Объявления</a></li>
-              <li><a href="#">Новое в законодательстве</a></li>
+            <ul id="tabs-nav">
+              <li><a href="#tab1">Новости</a></li>
+              <li><a href="#tab2">Объявления</a></li>
+              <li><a href="#tab3">Новое в законодательстве</a></li>
             </ul>
             <a href="#" class="press__header_news">
               Все новости
@@ -245,72 +253,216 @@
           </div>
 
           <div class="press__body">
-            <div class="press__col">
-              <div class="press__news">
-                <a href="#" class="press__news_date">
-                  <img src="assets/images/icons/calendar.svg" alt="" />
-                  28.12.2020
-                </a>
-                <p>
-                  #Юстиция_конкурс. <br />
-                  Министерство юстиции объявляет конкурс для журналистов и
-                  блогеров
-                </p>
+            <div class="tabs press__col">
+              <div id="tabs-content" class="press__col_contents">
+                <div id="tab1" class="tab-content press__col_content">
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      28.12.2020
+                    </a>
+                    <p>
+                      #Юстиция_конкурс. <br />
+                      Министерство юстиции объявляет конкурс для журналистов и
+                      блогеров
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      24.08.2020
+                    </a>
+                    <p>
+                      Приглашаем журналистов и блогеров на вебинар «Коронавирус
+                      и информация: этика, право и объективность» с участием
+                      международных...
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      29.09.2020
+                    </a>
+                    <p>
+                      Меняющиеся ставки акцизного налога, новая льгота для
+                      предпринимателей, вводимый новый порядок: что изменится с
+                      1 октября?
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      19.08.2020
+                    </a>
+                    <p>
+                      Министерство юстиции проведет видеодиалог на тему
+                      «Внедрение в стране механизма досудебного урегулирования
+                      споров»
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      02.09.2020
+                    </a>
+                    <p>
+                      3 сентября 2020 года в 15:00 на странице Министерства
+                      юстиции в Facebook'е «Адлия билан мулоқот/Диалог с
+                      юстицией»
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      17.08.2020
+                    </a>
+                    <p>
+                      Уважаемые граждане состоится онлайн-диалог на тему
+                      «Порядок организации нотариусами нотариальной деятельности
+                      в условиях пандемии»
+                    </p>
+                  </div>
+                </div>
+                <div id="tab2" class="tab-content press__col_content">
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      28.12.2020
+                    </a>
+                    <p>
+                      #Юстиция_конкурс. <br />
+                      Министерство юстиции объявляет конкурс для журналистов и
+                      блогеров
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      25.08.2020
+                    </a>
+                    <p>
+                      Приглашаем журналистов и блогеров на вебинар «Коронавирус
+                      и информация: этика, право и объективность» с участием
+                      международных...
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      29.09.2020
+                    </a>
+                    <p>
+                      Меняющиеся ставки акцизного налога, новая льгота для
+                      предпринимателей, вводимый новый порядок: что изменится с
+                      1 октября?
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      19.08.2020
+                    </a>
+                    <p>
+                      Министерство юстиции проведет видеодиалог на тему
+                      «Внедрение в стране механизма досудебного урегулирования
+                      споров»
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      02.09.2020
+                    </a>
+                    <p>
+                      3 сентября 2020 года в 15:00 на странице Министерства
+                      юстиции в Facebook'е «Адлия билан мулоқот/Диалог с
+                      юстицией»
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      17.08.2020
+                    </a>
+                    <p>
+                      Уважаемые граждане состоится онлайн-диалог на тему
+                      «Порядок организации нотариусами нотариальной деятельности
+                      в условиях пандемии»
+                    </p>
+                  </div>
+                </div>
+                <div id="tab3" class="tab-content press__col_content">
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      28.12.2020
+                    </a>
+                    <p>
+                      #Юстиция_конкурс. <br />
+                      Министерство юстиции объявляет конкурс для журналистов и
+                      блогеров
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      24.08.2020
+                    </a>
+                    <p>
+                      Приглашаем журналистов и блогеров на вебинар «Коронавирус
+                      и информация: этика, право и объективность» с участием
+                      международных...
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      29.09.2020
+                    </a>
+                    <p>
+                      Меняющиеся ставки акцизного налога, новая льгота для
+                      предпринимателей, вводимый новый порядок: что изменится с
+                      1 октября?
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      19.08.2020
+                    </a>
+                    <p>
+                      Министерство юстиции проведет видеодиалог на тему
+                      «Внедрение в стране механизма досудебного урегулирования
+                      споров»
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      02.09.2020
+                    </a>
+                    <p>
+                      3 сентября 2020 года в 15:00 на странице Министерства
+                      юстиции в Facebook'е «Адлия билан мулоқот/Диалог с
+                      юстицией»
+                    </p>
+                  </div>
+                  <div class="press__news">
+                    <a href="#" class="press__news_date">
+                      <img src="assets/images/icons/calendar.svg" alt="" />
+                      17.08.2020
+                    </a>
+                    <p>
+                      Уважаемые граждане состоится онлайн-диалог на тему
+                      «Порядок организации нотариусами нотариальной деятельности
+                      в условиях пандемии»
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="press__news">
-                <a href="#" class="press__news_date">
-                  <img src="assets/images/icons/calendar.svg" alt="" />
-                  24.08.2020
-                </a>
-                <p>
-                  Приглашаем журналистов и блогеров на вебинар «Коронавирус и
-                  информация: этика, право и объективность» с участием
-                  международных...
-                </p>
-              </div>
-              <div class="press__news">
-                <a href="#" class="press__news_date">
-                  <img src="assets/images/icons/calendar.svg" alt="" />
-                  29.09.2020
-                </a>
-                <p>
-                  Меняющиеся ставки акцизного налога, новая льгота для
-                  предпринимателей, вводимый новый порядок: что изменится с 1
-                  октября?
-                </p>
-              </div>
-              <div class="press__news">
-                <a href="#" class="press__news_date">
-                  <img src="assets/images/icons/calendar.svg" alt="" />
-                  19.08.2020
-                </a>
-                <p>
-                  Министерство юстиции проведет видеодиалог на тему «Внедрение в
-                  стране механизма досудебного урегулирования споров»
-                </p>
-              </div>
-              <div class="press__news">
-                <a href="#" class="press__news_date">
-                  <img src="assets/images/icons/calendar.svg" alt="" />
-                  02.09.2020
-                </a>
-                <p>
-                  3 сентября 2020 года в 15:00 на странице Министерства юстиции
-                  в Facebook'е «Адлия билан мулоқот/Диалог с юстицией»
-                </p>
-              </div>
-              <div class="press__news">
-                <a href="#" class="press__news_date">
-                  <img src="assets/images/icons/calendar.svg" alt="" />
-                  17.08.2020
-                </a>
-                <p>
-                  Уважаемые граждане состоится онлайн-диалог на тему «Порядок
-                  организации нотариусами нотариальной деятельности в условиях
-                  пандемии»
-                </p>
-              </div>
+              <!-- END tabs-content -->
             </div>
+
             <div class="press__col2">
               <div class="press__card">
                 <img src="assets/images/press/logo 1.png" alt="" />
@@ -480,52 +632,55 @@
         </div>
         <div class="resource__body">
           <div class="resource__wrapper">
-            <div class="swiper mySwiper3 resource__swiper">
-              <div class="swiper-wrapper resource__swiper_wrapper">
-                <div class="swiper-slide resource__slide">
-                  <div class="resource__content">
-                    <div class="resource__image">
-                      <img
-                        src="assets/images/coat of arms.png"
-                        alt="coat of arms"
-                      />
-                    </div>
-                    <div class="resource__other">
-                      <a href="#">www.president.uz</a>
-                      <p>
-                        Официальный веб-сайт Президента Республики Узбекистан
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide resource__slide">
-                  <div class="resource__content">
-                    <div class="resource__image">
-                      <img src="assets/images/gov logo.png" alt="gov logo" />
-                    </div>
-                    <div class="resource__other">
-                      <a href="#">www.gov.uz</a>
-                      <p>Правительственный портал Республики Узбекистан</p>
+            <div class="resource__swiper">
+              <div class="resource__swiper_wrapper">
+                <div class="owl-carousel owl-theme">
+                  <div class="resource__slide item">
+                    <div class="resource__content">
+                      <div class="resource__image">
+                        <img
+                          src="assets/images/coat of arms.png"
+                          alt="coat of arms"
+                        />
+                      </div>
+                      <div class="resource__other">
+                        <a href="#">www.president.uz</a>
+                        <p>
+                          Официальный веб-сайт Президента Республики Узбекистан
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide resource__slide">
-                  <div class="resource__content">
-                    <div class="resource__image">
-                      <img src="assets/images/parlament.png" alt="parlament" />
+                  <div class="resource__slide item">
+                    <div class="resource__content">
+                      <div class="resource__image">
+                        <img src="assets/images/gov logo.png" alt="gov logo" />
+                      </div>
+                      <div class="resource__other">
+                        <a href="#">www.gov.uz</a>
+                        <p>Правительственный портал Республики Узбекистан</p>
+                      </div>
                     </div>
-                    <div class="resource__other">
-                      <a href="#">www.parliament.gov.uz</a>
-                      <p>
-                        Законодательная палата Олий Мажлиса Республики
-                        Узбекистан
-                      </p>
+                  </div>
+                  <div class="resource__slide item">
+                    <div class="resource__content">
+                      <div class="resource__image">
+                        <img
+                          src="assets/images/parlament.png"
+                          alt="parlament"
+                        />
+                      </div>
+                      <div class="resource__other">
+                        <a href="#">www.parliament.gov.uz</a>
+                        <p>
+                          Законодательная палата Олий Мажлиса Республики
+                          Узбекистан
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
             </div>
           </div>
         </div>
@@ -606,24 +761,21 @@
     </footer>
   </body>
 
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/owlcarousel/dist/owl.carousel.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script>
-    // var swiper = new Swiper(".mySwiper", {
-    //   loop: true,
-    //   spaceBetween: 10,
-    //   slidesPerView: 2,
-    //   navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    //   },
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     type: "fraction",
-    //   },
-    //   freeMode: true,
-    //   watchSlidesProgress: true,
-    // });
+    $(".owl-carousel").owlCarousel({
+      nav: true,
+      dots: false,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+    });
+
     var swiper2 = new Swiper(".mySwiper2", {
       loop: true,
       spaceBetween: 0,
@@ -632,18 +784,6 @@
       },
       thumbs: {
         swiper: swiper,
-      },
-    });
-    var swiper = new Swiper(".mySwiper3", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
       },
     });
   </script>
